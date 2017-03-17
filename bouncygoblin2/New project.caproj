@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>game</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="BG" sid="227348549920013">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\heros\Desktop\BG.png" />
+        </object-type>
+        <object-type name="bar" sid="440918994211493">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="495171017886219">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Turret" sid="646056056362015">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="836813927238420">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="610722502651385" speed="5">
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.5" original-source="C:\Users\heros\Desktop\Tarp.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="423921378896141">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="target" sid="164817335578478">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="935384492683516" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ball" sid="499201507796195">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="120637784139957">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="377840404734612">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="126398641972049">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="429252745965085" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\heros\Desktop\Bouncy-Goblin.png">
+                        <collision-poly>
+                            <point x="0.14" y="0.26" />
+                            <point x="0.267" y="0.112" />
+                            <point x="0.442" y="0.052" />
+                            <point x="0.689" y="0.09" />
+                            <point x="0.856" y="0.192" />
+                            <point x="0.975" y="0.349" />
+                            <point x="0.958" y="0.674" />
+                            <point x="0.82" y="0.868" />
+                            <point x="0.562" y="0.966" />
+                            <point x="0.316" y="0.9" />
+                            <point x="0.126" y="0.81" />
+                            <point x="0.0160001" y="0.648" />
+                            <point x="0.0440001" y="0.404" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="658801047812989">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="wall" sid="743469495763895">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="736709367469335">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="851783315208014">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="275013949010960" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin" sid="422208475411356">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="timeonearth" sid="558136735568376" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="133819563170586" speed="0">
+                    <frame duration="1" hotspotX="0.704918" hotspotY="0.438462" original-source="C:\Users\heros\Desktop\Coin.png">
+                        <collision-poly>
+                            <point x="0.122951" y="0.124517" />
+                            <point x="0.515659" y="0" />
+                            <point x="0.852459" y="0.102633" />
+                            <point x="0.991803" y="0.520547" />
+                            <point x="0.868853" y="0.938461" />
+                            <point x="0.523489" y="1" />
+                            <point x="0.114754" y="0.869231" />
+                            <point x="0" y="0.496874" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.228" y="0.356" />
+                            <point x="0.452" y="0.166" />
+                            <point x="0.692" y="0.336" />
+                            <point x="0.68" y="0.768" />
+                            <point x="0.454" y="0.896" />
+                            <point x="0.204" y="0.792" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="points" sid="532340575034682">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="pause" sid="107891509195148">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="pausescreen" sid="221308721438465">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="resume" sid="781295138130193">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="respwan" sid="209600398714026">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="331687464437282" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="genural" sid="893769697528807">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="start" sid="294068300002344">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="mainMenue" sid="136568225971188">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="topscore" sid="432110206085553">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="timmer" sid="782965263860609">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="arrowL" sid="426221823969538">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="266321467759307" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arrowR" sid="551226474371221">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="547991155996376" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BlueGem" sid="193823475254794">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="timeonearth" sid="411112030517757" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="509953584514759" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\heros\Desktop\BlueGem.png">
+                        <collision-poly>
+                            <point x="0.154412" y="0.154412" />
+                            <point x="0.5" y="0.00735294" />
+                            <point x="0.845588" y="0.154412" />
+                            <point x="0.992647" y="0.5" />
+                            <point x="0.845588" y="0.845588" />
+                            <point x="0.5" y="0.992647" />
+                            <point x="0.154412" y="0.845588" />
+                            <point x="0.0147059" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.154412" y="0.154412" />
+                            <point x="0.5" y="0.00735294" />
+                            <point x="0.845588" y="0.154412" />
+                            <point x="0.992647" y="0.5" />
+                            <point x="0.845588" y="0.845588" />
+                            <point x="0.5" y="0.992647" />
+                            <point x="0.154412" y="0.845588" />
+                            <point x="0.0147059" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="greenGem" sid="588009393969240">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="timeonearth" sid="653417591073407" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="828380944967297" speed="0">
+                    <frame duration="1" hotspotX="0.495495" hotspotY="0.5" original-source="C:\Users\heros\Desktop\GreenGem.png">
+                        <collision-poly>
+                            <point x="0.495495" y="0.00609756" />
+                            <point x="0.981982" y="0.5" />
+                            <point x="0.495495" y="0.993902" />
+                            <point x="0.00900901" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.495495" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.495495" y="0.00609756" />
+                            <point x="0.981982" y="0.5" />
+                            <point x="0.495495" y="0.993902" />
+                            <point x="0.00900901" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="purpleGem" sid="205717285881413">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="timeonearth" sid="476768131463939" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="967226658318923" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\heros\Desktop\PurpleGem.png">
+                        <collision-poly>
+                            <point x="0.0793651" y="0.0859375" />
+                            <point x="0.5" y="0.015625" />
+                            <point x="0.920635" y="0.0859375" />
+                            <point x="0.992063" y="0.5" />
+                            <point x="0.920635" y="0.914063" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.0793651" y="0.914063" />
+                            <point x="0.00793651" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0793651" y="0.0859375" />
+                            <point x="0.5" y="0.015625" />
+                            <point x="0.920635" y="0.0859375" />
+                            <point x="0.992063" y="0.5" />
+                            <point x="0.920635" y="0.914063" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.0793651" y="0.914063" />
+                            <point x="0.00793651" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="YellowGem" sid="611161572470837">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="timeonearth" sid="343004760615630" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="120065559973982" speed="0">
+                    <frame duration="1" hotspotX="0.497041" hotspotY="0.5" original-source="C:\Users\heros\Desktop\YellowGem.png">
+                        <collision-poly>
+                            <point x="0.16568" y="0.0757576" />
+                            <point x="0.497041" y="0.0151515" />
+                            <point x="0.828402" y="0.0757576" />
+                            <point x="0.988166" y="0.333333" />
+                            <point x="0.497041" y="0.984848" />
+                            <point x="0.0118343" y="0.356061" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.497041" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.16568" y="0.0757576" />
+                            <point x="0.497041" y="0.0151515" />
+                            <point x="0.828402" y="0.0757576" />
+                            <point x="0.988166" y="0.333333" />
+                            <point x="0.497041" y="0.984848" />
+                            <point x="0.0118343" y="0.356061" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tarp" sid="767660222566243">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Turret" sid="555028317473301">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="571915066097750">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156275970374343" speed="5">
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.497669" original-source="C:\Users\heros\Desktop\Tarp.png">
+                        <image-point name="Imagepoint 1" x="0.754098" y="0.0151515" />
+                        <image-point name="Imagepoint 2" x="0.967213" y="0.996503" />
+                        <collision-poly>
+                            <point x="0.688525" y="0.118881" />
+                            <point x="0.606557" y="0.497669" />
+                            <point x="0.934426" y="0.995338" />
+                            <point x="0.557377" y="0.861305" />
+                            <point x="0.0163935" y="0.502331" />
+                            <point x="0.459016" y="0.12704" />
+                            <point x="0.786885" y="0.00233101" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.497669">
+                        <image-point name="Imagepoint 1" x="0.754098" y="0.0151515" />
+                        <image-point name="Imagepoint 2" x="0.967213" y="0.996503" />
+                        <collision-poly>
+                            <point x="0.688525" y="0.118881" />
+                            <point x="0.606557" y="0.497669" />
+                            <point x="0.934426" y="0.995338" />
+                            <point x="0.557377" y="0.861305" />
+                            <point x="0.0163935" y="0.502331" />
+                            <point x="0.459016" y="0.12704" />
+                            <point x="0.786885" y="0.00233101" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fairyGoblin" sid="188645900675929">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="269774039212594">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="268742487360125" speed="5">
+                    <frame duration="1" hotspotX="0.909677" hotspotY="0.504" original-source="C:\Users\heros\Desktop\LeftFairy-Goblin.png">
+                        <image-point name="Imagepoint 1" x="0.890323" y="0.52" />
+                        <collision-poly>
+                            <point x="0.083871" y="0.132" />
+                            <point x="1" y="0.424" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="0.624" />
+                            <point x="0.083871" y="0.868" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.894737" hotspotY="0.506024" original-source="C:\Users\heros\Desktop\LeftFairy-Goblin.png">
+                        <collision-poly>
+                            <point x="0" y="0.123663" />
+                            <point x="1" y="0.423871" />
+                            <point x="1" y="0.502008" />
+                            <point x="1" y="0.629494" />
+                            <point x="0" y="0.880353" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fairyGoblin2" sid="331479840402490">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="534856094501098">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="116323895076193" speed="5">
+                    <frame duration="1" hotspotX="0.529032" hotspotY="0.46" original-source="C:\Users\heros\Desktop\LeftFairy-Goblin.png">
+                        <image-point name="Imagepoint 1" x="0.109677" y="0.508" />
+                        <collision-poly>
+                            <point x="0.916129" y="0.868" />
+                            <point x="0" y="0.624" />
+                            <point x="0" y="0.5" />
+                            <point x="0" y="0.424" />
+                            <point x="0.916129" y="0.132" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.519737" hotspotY="0.461847" original-source="C:\Users\heros\Desktop\LeftFairy-Goblin.png">
+                        <collision-poly>
+                            <point x="1" y="0.880353" />
+                            <point x="0" y="0.629494" />
+                            <point x="0" y="0.502008" />
+                            <point x="0" y="0.423871" />
+                            <point x="1" y="0.123663" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="title" sid="647073865370644">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="651971220508330">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="HIscore" sid="836420519699730">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>start.xml</layout>
+        <layout>game.xml</layout>
+        <layout>end.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="2" />
+        <global-instance type="Touch" uid="5">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="40">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="BouncyGoblinMainv1.m4a" />
+        <file name="BouncyGoblinMainv1.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
